@@ -8,14 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
-<body>
+<body >
 
-    <header>
-        <nav class="navbar navbar-expand-md bg-body-black ">
-            <div class="container-fluid d-flex px-4 mx-4 ">
+    <header class="d-flex">
+        <nav class="navbar navbar-expand-md fixed-top py-3" id="nav">
+            <div class="container-fluid d-flex px-3 mx-4">
                 <!-- Logo (Position 1, Left) -->
-                <a class="navbar-brand order-md-1 " href="#">Navbar</a>
+                <a class="navbar-brand order-md-1 fw-bold" href="#">SAVEUR</a>
 
                 <!-- Icons and Toggle Button (Position 3, Right) -->
                 <div class="d-flex order-md-3 align-items-center gap-2">
@@ -53,7 +54,13 @@
                 
             </div>
         </nav>
-        
+        <div class="my-auto " id="header">
+            <p>Welcome to Saveur</p>
+            <h1>A Culinary Journey of Elegant Flavors</h1>
+            <p>Experience our seasonal menu crafted with precision and passion, highlighting the finest locally-sourced ingredients.</p>
+            <a href=""><button>Book a Table</button></a>
+            <a href=""><button>Explore Menu</button></a>
+        </div>
     </header>
 
     <main>
@@ -129,8 +136,8 @@
             </div>
         </div>
 
-        <div class="text-center row">
-            <p>© 2025 Jorxas Restaurant. All rights reserved.</p>
+        <div class="text-center row ">
+            <p class="text-small">© 2025 Jorxas Restaurant. All rights reserved.</p>
         </div>
         
 

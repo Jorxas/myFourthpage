@@ -5,7 +5,9 @@
 body {
     background-color: #f8f9fa; 
     color: #212529; 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-seri f;
+    width: 100%;
+    
     
 }
 
@@ -13,3 +15,109 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+/* Classe ajoutée pour la barre de navigation quand on fait défiler la page */
+#nav{
+    transition: background-color 0.3s ease;
+}
+.navbar-scrolled {
+    background-color: white;  
+    transition: background-color 0.3s ease;
+}
+  
+
+/* Titres principaux (h1) - Hero */
+h1, .hero-title {
+    font-size: 4rem; /* 64px sur mobile */
+    font-size: clamp(2.5rem, 5vw, 4.5rem); /* responsive entre 40px et 72px */
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  /* Titres de section (h2) */
+  h2, .section-title {
+    font-size: 0.875rem; /* 14px - pour les petits titres en uppercase */
+    
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  
+  /* Sous-titres (h3) */
+  h3, .subtitle {
+    font-size: 1.875rem; /* 30px sur mobile */
+    font-size: clamp(1.875rem, 4vw, 2.25rem); /* responsive entre 30px et 36px */
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  /* Titres de carte (h4) */
+  h4, .card-title {
+    font-size: 1.25rem; /* 20px */
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+  
+  /* Paragraphes */
+  p, .text-body {
+    font-size: 1rem; /* 16px par défaut */
+    
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* Paragraphes plus grands (Hero, sections importantes) */
+  .text-large {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.7;
+  }
+  
+  /* Liens de navigation */
+  .nav-link {
+    font-size: 0.875rem; /* 14px */
+    
+    font-weight: 500;
+  }
+  
+  /* Liens de navigation actifs */
+  .nav-link-active {
+    font-size: 0.875rem; /* 14px */
+    
+    font-weight: 600;
+  }
+  
+  /* Boutons */
+.button {
+    font-size: 0.875rem; /* 14px */
+    
+    font-weight: 500;
+}
+  
+
+  
+  /* Petit texte (footer, légendes) */
+  .text-small {
+    font-size: 0.875rem; /* 14px */
+    
+  }
+  
+
+  
